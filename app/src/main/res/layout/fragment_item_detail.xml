@@ -66,6 +66,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin"
         android:text="@string/sell"
+        app:backgroundTint="#00ff44"
         app:layout_constraintBottom_toTopOf="@+id/delete_item"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -78,6 +79,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin"
         android:text="@string/delete"
+        app:backgroundTint="#00fff7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/sell_item" />
@@ -90,6 +92,7 @@
         android:layout_marginBottom="@dimen/margin_between_elements"
         android:contentDescription="@string/edit_item"
         android:src="@drawable/ic_edit"
+        app:backgroundTint="#e5ff00"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:tint="@android:color/white" />

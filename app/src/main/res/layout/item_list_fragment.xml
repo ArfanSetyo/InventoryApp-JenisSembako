@@ -25,6 +25,8 @@
     <TextView
         android:id="@+id/item_name"
         style="@style/Widget.Inventory.Header"
+        android:layout_width="131dp"
+        android:layout_height="20dp"
         android:layout_marginStart="@dimen/margin_between_elements"
         android:text="@string/item"
         app:layout_constraintEnd_toStartOf="@+id/item_price"
@@ -82,6 +84,7 @@
         android:layout_marginBottom="@dimen/margin_between_elements"
         android:contentDescription="@string/add_new_item"
         android:src="@android:drawable/ic_input_add"
+        app:backgroundTint="#ff00f7"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:tint="@android:color/white" />
