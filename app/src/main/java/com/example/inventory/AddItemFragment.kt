@@ -34,8 +34,8 @@ import com.example.inventory.databinding.FragmentAddItemBinding
  */
 class AddItemFragment : Fragment() {
 
-    // Use the 'by activityViewModels()' Kotlin property delegate from the fragment-ktx artifact
-    // to share the ViewModel across fragments.
+    // Gunakan delegasi properti Kotlin 'by activityViewModels()' dari artefak fragmen-ktx
+    // untuk membagikan ViewModel di seluruh fragmen.
     private val viewModel: InventoryViewModel by activityViewModels {
         InventoryViewModelFactory(
             (activity?.application as InventoryApplication).database
@@ -46,9 +46,9 @@ class AddItemFragment : Fragment() {
 
     lateinit var item: Item
 
-    // Binding object instance corresponding to the fragment_add_item.xml layout
-    // This property is non-null between the onCreateView() and onDestroyView() lifecycle callbacks,
-    // when the view hierarchy is attached to the fragment
+    // Mengikat instance objek yang sesuai dengan tata letak fragment_add_item.xml
+    // Properti ini bukan nol antara callback siklus hidup onCreateView() dan onDestroyView(),
+    // saat hierarki tampilan dilampirkan ke fragmen
     private var _binding: FragmentAddItemBinding? = null
     private val binding get() = _binding!!
 
